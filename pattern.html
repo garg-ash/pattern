@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns</title>
+</head>
+<body>
+    <script>
+        // let n=5;
+        // let str="";
+        // for(i=1; i<=n; i++){
+        //     for(j=0; j<i; j++){
+        //         str+="*"
+        //     }
+        //     str +="\n";
+        // }
+        // console.log(str);
+
+        for(let i=1; i<=5; i++){
+            for(let j=1; j<=i; j++){
+                document.write('*');
+            }
+            document.write('<br/>');
+        }
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+
+        let i,j,k;
+        for(i=1; i<=5; i++){
+
+            for(k=1; k<=5-i; k++){
+                document.write("&nbsp;&nbsp");
+            }
+            for(j=1; j<=i; j++){
+                document.write('*');
+            }
+            document.write('<br/>')
+        }
+//         *
+//       **
+//     ***
+//   ****
+// *****
+        
+
+
+   for (let i = 1; i <= 5; i++) {
+   output = '';
+   for (let j = 1; j <= i; j++) {
+    output += j;
+  }
+  console.log(output);
+}
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+
+for(let i=5; i>=1; i--){
+    output='';
+    for(let j=i; j>=1; j--){
+        output +=j;
+    }
+    console.log(output);
+}
+
+// 54321
+// 4321
+// 321
+// 21
+// 1
+
+
+for(let i=5; i>=1; i--){
+    output='';
+    for(let j=5; j>=i; j--){
+        output +=j;
+    }
+    console.log(output)
+}
+
+// 5
+// 54
+// 543
+// 5432
+// 54321
+
+
+for (let i = 1; i <= 5; i++) {
+  let output = '';
+  for (let j = 5; j >= i; j--) {
+    output += j;
+  }
+  console.log(output);
+}
+
+// 54321
+// 5432
+// 543
+// 54
+// 5
+
+
+let cunter=1;
+for (let i =1; i<=5; i++){
+    let output='';
+    for (let j=1; j<=i; j++){
+        output+=cunter;
+        cunter++;
+    }
+    console.log(output);
+}
+
+// 1
+// 23
+// 456
+// 78910
+// 1112131415
+
+
+for (let i = 1; i <= 5; i++) {
+  let output = '';
+  
+  for (let j = 1; j <= i; j++) {
+    if (j % 2 === 1) {
+      output += '@';
+    } else {
+      output += '#';
+    }
+  }
+
+  console.log(output);
+}
+
+// @
+// @#
+// @#@
+// @#@#
+// @#@#@
+
+
+
+let counter = 1;
+
+for (let i = 5; i >= 1; i--) {
+  let output = '';
+
+  for (let j = 1; j <= i; j++) {
+    output += counter;
+    counter++;
+  }
+
+  console.log(output);
+}
+
+// 12345
+// 6789
+// 101112
+// 1314
+// 15
+
+
+
+        
+
+        
+
+        
+    </script>
+</body>
+</html>
